@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# compiled js code from typescript
+dist/app.js
+dist/commands.js
+dist/utils/
