@@ -1,0 +1,23 @@
+roles-and-policies:
+  Properties:
+    AssumeRolePolicyDocument:
+      Statement:
+      - Effect: Allow
+        Principal:
+          Service: lambda.amazonaws.com
+        Action: sts:AssumeRole
+      Version: '2012-10-17'
+    Path: /
+    Policies:
+    - PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Action:
+              - logs:CreateLogGroup
+              - logs:CreateLogStream
+              - logs:PutLogEvents
+            Resource: arn:aws:logs:*:*:*
+        Version: '2012-10-17'
+      PolicyName: ${self:service.name}-${self:provider.stage}-policy
+    RoleName: ${self:service.name}-${self:provider.stage}-role
+  Type: AWS::IAM::Role
