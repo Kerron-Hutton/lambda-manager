@@ -1,0 +1,54 @@
+{
+  "name": "lambda-manager",
+  "version": "1.0.0",
+  "description": "Lambda Manager is a nodeJs cli that can be used to create a typescript lambda project consisting of TsLinting, serverless and npm configurations.",
+  "main": "index.js",
+  "bin": {
+    "la": "./dist/commands.js",
+    "lambda-manager": "./dist/commands.js"
+  },
+  "scripts": {
+    "lint": "tslint --project tsconfig.json --fix",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kerron-Hutton/lambda-manager.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli-app",
+    "aws",
+    "lambda",
+    "lambda-cli",
+    "typescript",
+    "aws-cli",
+    "lambda-builder",
+    "create-lambda",
+    "deploy-lambda",
+    "remove-lambda"
+  ],
+  "author": "Kerron Hutton",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Kerron-Hutton/lambda-manager/issues"
+  },
+  "homepage": "https://github.com/Kerron-Hutton/lambda-manager#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clui": "^0.3.6",
+    "commander": "^2.20.0",
+    "figlet": "^1.2.3",
+    "serverless": "^1.45.1"
+  },
+  "devDependencies": {
+    "@types/clui": "^0.3.0",
+    "@types/commander": "^2.12.2",
+    "@types/node": "^12.0.8",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.2"
+  }
+}
