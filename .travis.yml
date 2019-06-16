@@ -8,7 +8,6 @@ script:
   - npm run lint
 before_deploy:
   - npm run build
-  - cd dist
 deploy:
   provider: npm
   email: $NPM_EMAIL
