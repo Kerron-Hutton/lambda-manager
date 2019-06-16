@@ -4,13 +4,14 @@
   "description": "Lambda Manager is a nodeJs cli that can be used to create a typescript lambda project consisting of TsLinting, serverless and npm configurations.",
   "main": "index.js",
   "bin": {
-    "la": "./dist/commands.js",
+    "lam": "./dist/commands.js",
     "lambda-manager": "./dist/commands.js"
   },
   "scripts": {
     "lint": "tslint --project tsconfig.json --fix",
     "build": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "remove": "serverless remove"
   },
   "repository": {
     "type": "git",
