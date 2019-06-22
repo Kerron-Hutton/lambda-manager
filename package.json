@@ -2,7 +2,7 @@
   "name": "aws-lambda-manager",
   "version": "1.0.0",
   "description": "Lambda Manager is a nodeJs cli that can be used to create a typescript lambda project consisting of TsLinting, serverless and npm configurations.",
-  "main": "index.js",
+  "main": "./dist/app.js",
   "bin": {
     "lam": "./dist/commands.js",
     "lambda-manager": "./dist/commands.js"
