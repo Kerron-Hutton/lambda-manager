@@ -48,6 +48,15 @@ lam -h or lam --help
 
 **Note**  The cli can be invoked with either `lam`or `lambda-manager`
 
+## Contributing
+
+1. Fork it!
+1. Create your feature branch: git checkout -b my-new-feature
+1. Commit your changes: git commit -am 'Add some feature'
+1. Push to the branch: git push origin my-new-feature
+1. Submit a pull request :D
+
+
 ## Licensing
 Lambda Manager is licensed under the [Apache 2.0 License.](https://www.apache.org/licenses/LICENSE-2.0)
 
