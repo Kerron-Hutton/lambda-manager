@@ -1,6 +1,8 @@
 # Lambda Manager
 
 [![Build Status](https://travis-ci.org/Kerron-Hutton/lambda-manager.svg?branch=master)](https://travis-ci.org/Kerron-Hutton/lambda-manager)
+[![install size](https://packagephobia.now.sh/badge?p=aws-lambda-manager)](https://packagephobia.now.sh/result?p=aws-lambda-manager)
+[![NPM Downloads](https://img.shields.io/npm/dm/aws-lambda-manager.svg?style=flat)](https://npmcharts.com/compare/aws-lambda-manager?minimal=true)
 [![GitHub issues](https://img.shields.io/github/issues/Kerron-Hutton/lambda-manager.svg)](https://github.com/Kerron-Hutton/lambda-manager/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Kerron-Hutton/lambda-manager.svg)](https://github.com/Kerron-Hutton/lambda-manager/stargazers)
 [![GitHub license](https://img.shields.io/github/license/Kerron-Hutton/lambda-manager.svg)](https://github.com/Kerron-Hutton/lambda-manager/blob/master/LICENSE)

@@ -36,9 +36,17 @@ program
     if (isStringType(cmd.name) && cmd.name !== '')
       service = cmd.name;
 
-    buildLambda(resolve(dir), service, app)
-      .catch(error => console.error(error));
+    buildLambda(resolve(dir), service, app);
   });
+
+/**
+* Provides the user with the option to remove a project from aws.
+*/
+program
+  .command('deployed-lambdas')
+  .command('list')
+  .description('removes lambda from aws and all it\'s resources.')
+  .action(() => removeLambda('sls remove'));
 
 /**
  * Provides the user with the option to deploy a project to aws.
@@ -72,8 +80,7 @@ program
     if (cmd.force !== undefined && cmd.force)
       command += ` --force`;
 
-    deployLambda(command)
-      .catch(error => console.error(error));
+    deployLambda(command);
   });
 
 /**
