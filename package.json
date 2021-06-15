@@ -46,7 +46,7 @@
     "clui": "^0.3.6",
     "commander": "^2.20.0",
     "figlet": "^1.2.3",
-    "serverless": "^1.45.1"
+    "serverless": "^2.46.0"
   },
   "devDependencies": {
     "@types/clui": "^0.3.0",
